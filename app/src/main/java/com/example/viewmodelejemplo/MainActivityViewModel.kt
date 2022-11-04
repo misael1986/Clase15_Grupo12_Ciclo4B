@@ -4,9 +4,13 @@ import androidx.lifecycle.ViewModel
 
 class MainActivityViewModel : ViewModel() {
 
-    var number = 0
+    private var number = 0
 
     fun addOne() {
         number++
+    }
+
+    fun getNumber():Int{
+        return this.number
     }
 }
